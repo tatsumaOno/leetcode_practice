@@ -4,6 +4,7 @@
  */
  var isValid = function(s) {
     if (s.length <= 1) return false;
+    // 配列分割(2つずつ)
     const evenArrs = [...s].reduce((prev, next, index) => {
     return index % 2 == 0 ? 
     [...prev, [next]] : 
